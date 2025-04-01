@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ece8ea;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    display: flex;
+    max-width: 1600px;
+    margin: 50px auto;
+    padding: 20px;
+    /*background-color: #fff;*/
+    border-radius: 15px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: white;
+    font-size: 32px;
+}
+
+.left {
+    display: inline-block;
+    vertical-align: top;
+    width: 40%;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+    background-color: #f78418;
+    background-image: linear-gradient(45deg, rgba(255, 0, 0, 0.411), rgba(0, 0, 255, 0.479));
+    border-radius: 10px 0px 0px 10px;
+}
+
+
+.right {
+    display: inline-block;
+    vertical-align: top;
+    width: 60%;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: #c9c9c9;
+    border-radius: 0px 10px 10px 0px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.resume_img {
+    width: 24px;
+    transform: translateY(5px);
+}
+
+#avatar {
+    max-width: 200px;
+    padding-top: 100px;
+}
+
+#sar {
+    display: none;
+    background-color: rgb(245, 245, 245);
+    border-radius: 20px;
+    padding: 15px; 
+}
+
+#info {
+    background-color: rgb(245, 245, 245);
+    border-radius: 20px;
+    padding: 15px; 
+}
+
+button {
+    font-size: 16px;
+    height: 40px;
+    background-color: rgb(33, 65, 250);
+    border-radius: 10px;
+    border-width: 0px;
+    padding: 10px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background-color: rgb(61, 90, 252); /*252, 196, 43*/
+}
+
+.btn_stl button {
+    background-color: white;
+    color: black;
+    font-size: 12px;
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 1px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;    
+    border: none;             
+    border-radius: 5px;       
+    cursor: pointer;          
+}
+
+p {
+    white-space: pre-line;
+}
+
+.for_call {
+    margin-top: 200px;
+}
+
+@media (max-width: 700px) {
+    .container {
+        display: flex;
+        flex-direction: column; 
+        max-width: 1600px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 15px;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    }
+    .left, .right {
+        display: inline-block;
+        vertical-align: top;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .left {
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    .right {
+        border-radius: 0px 0px 10px 10px;
+    }
+}
