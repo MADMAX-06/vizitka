@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио Рябова Максима</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div><img id="avatar" src="6858485.png"></div>
+                <div id="fio">
+                    <h1>Рябов Максим Николаевич</h1>
+                    <div id="vacation">Тестировщик, системный администратор</div>
+                </div>
+                <div class="for_call"><h3>Для Связи:</h3>
+                    <span>
+                    <p>E-mail: maxim_ryabov@rambler.ru</p>
+                    <p>Telegram: <a href="https://t.me/Madmax_06">Написать мне</a></p>
+                    <div class="tooltip"><p>Бот-секретарь: <a href="https://t.me/MtSecretary_bot">связаться</a></p>
+                    </div>               
+                    </div>
+                    </span>
+            </div>
+            <div class="right">
+                <section class="first_sctn"><h3>Опыт работы:</h3></section>
+                <button id="qa">Тестировщик</button> - <a href="#"><img class="resume_img" src="file:///C:/Users/rocke/Downloads/download-svgrepo-com.svg" alt="Скачать резюме"></a>
+                
+                <div id="info">
+                    <section class="exp_block">
+                    <p>Имеется опыт тестирования e-commerce проектов.
+                    Ручное тестирование сайтов МФО. Был единственным тестировщиком и был закреплен за тремя сайтами по МФО (Младший (Junior) тестировщик ).
+                    Ручное тестирование сайтов по продаже кормов для животных. (Младший (Junior) тестировщик)
+                    Функциональное тестирование, регрессионное тестирование, исследовательское тестирование. 
+                    Составление и занесение баг-репортов в Jira.
+                    Автоматизация тестирования веб-сайтов с использованием Selenium.</p>              
+                    <p>Инструменты тестирования:</p>
+                    <div id="">
+                    Charles Proxy
+                    <br>
+                    Postman
+                    <br>
+                    Devtools
+                    <br>
+                    </div>
+                    <p>Дополнительный опыт тестирования</p>
+                    Опыт тестирования мобильных приложений:
+                    <br>
+                    Тестирование Mir Pay
+                    <br>
+                    Тестирование СБПэй
+                    <br>
+                    Участник программы VK Testers. Тестирование Mini Apps в VK. Тестирование VK, VK музыка, Облако Mail. Тестирование VK API.
+                    <div class="btn_stl"><button>Тест-кейсы</button> <button>Чек-листы</button> <button>Портфолио</button></div>
+                    </div>
+                    </section>
+                <br>
+                <button id="sa">Системный администратор</button>       
+                <div id="sar">
+                    <p>- Обеспечение бесперебойной работы всех ПК и устранение неисправностей.
+                    - Помощь штатным сотрудникам, работающим с ПК и офисной техникой, электронной почтой и т.д. в случае, возникновения трудностей.
+                    - Обеспечение нормальной работы используемых операционных систем и набор рабочих программ (ОС Windows, MS Office и т.п.):
+                    - Установка и настройка ПО для корректной работы.
+                    - Организация компьютерной сети.
+                    - Работа с учетными записями пользователей
+                    - Создание резервных копий данных, удаление и их восстановление в случае необходимости.
+                    - Добавление информации на сайт учреждения.</p>
+
+                </div>
+                <br>
+            </div>    
+    </div>
+
+
+    <script>
+
+        const resumeInfo = document.getElementById('info');
+        const saResume = document.getElementById('sar');
+    
+        const saButton = document.getElementById('sa');
+        const qaButton = document.getElementById('qa');
+        qaButton.disabled = true ;
+        
+        qaButton.addEventListener('click', () => {
+            resumeInfo.style.display = 'block'; 
+            saResume.style.display = 'none';
+            qaButton.disabled = resumeInfo.style.display === 'block'; 
+            saButton.disabled = saResume.style.display === 'block';       
+        })
+        saButton.addEventListener('click', () => {
+            /*saResume.textContent = 'Резюме системного администратора'; */
+            resumeInfo.style.display = 'none'; 
+            saResume.style.display = 'block';
+            qaButton.disabled = resumeInfo.style.display === 'block'; 
+            saButton.disabled = saResume.style.display === 'block';
+        })
+    
+    </script>
+</body>
+
+
+</html>
