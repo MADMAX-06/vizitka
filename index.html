@@ -73,31 +73,6 @@
             </div>    
     </div>
 
-
-    <script>
-
-        const resumeInfo = document.getElementById('info');
-        const saResume = document.getElementById('sar');
-    
-        const saButton = document.getElementById('sa');
-        const qaButton = document.getElementById('qa');
-        qaButton.disabled = true ;
-        
-        qaButton.addEventListener('click', () => {
-            resumeInfo.style.display = 'block'; 
-            saResume.style.display = 'none';
-            qaButton.disabled = resumeInfo.style.display === 'block'; 
-            saButton.disabled = saResume.style.display === 'block';       
-        })
-        saButton.addEventListener('click', () => {
-            /*saResume.textContent = 'Резюме системного администратора'; */
-            resumeInfo.style.display = 'none'; 
-            saResume.style.display = 'block';
-            qaButton.disabled = resumeInfo.style.display === 'block'; 
-            saButton.disabled = saResume.style.display === 'block';
-        })
-    
-    </script>
 </body>
 
 
